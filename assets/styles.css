@@ -118,6 +118,39 @@ input:checked + .slider:before {
     background: grey;
     transition: 0.2s ease-in;
 }
+.capsule{
+    width: 100%;
+}
 h2, .subTitleAppli{
     text-align: center;
+}
+.blocks-application{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    margin: 5% 5%;
+    justify-content: space-around;
+}
+.blocks-application div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.blocks-application img {
+width: 80px;
+}
+#parteners > div{
+    justify-content: center;
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+#parteners > div > div{
+    display: flex;
+    justify-content: center;
+}
+#parteners img{
+    width: auto;
+    height: 100px;
 }
