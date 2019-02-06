@@ -11,17 +11,18 @@
     <meta keyword="sieste, repos, employés, entreprise, solution contre la fatigue, repos en pleine journée, sieste dans un lieu publique">
     <title>Adilson</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <nav>
-    <a href="#" class="logo">Logo</a>
+    <a href="#" class="logo"><img src="assets/images/logo.png"></a>
     <ul>
         <li><a href="#solution">Notre solution</a></li>
         <li><a href="#application">Application</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<div class="block-choice">
+<div data-aos="zoom-in" class="block-choice">
     <label class="switch">
         <input type="checkbox" class="checkSwitch">
         <span class="slider round"></span>
@@ -44,43 +45,43 @@
 
 <section id="main">
     <div id="solution">
-        <h2>Notre solution</h2>
-        <img class="capsule" src="assets/images/capsule.png">
+        <h2>NOTRE SOLUTION</h2>
+        <img data-aos="zoom-in" class="capsule" src="assets/images/capsule.png">
     </div>
     <div id="application">
-        <h2>APPLICATION</h2>
+        <h2>APPLICATIONS</h2>
         <p class="subTitleAppli">où installer notre capsule?</p>
-        <div class="blocks-application">
+        <div data-aos="zoom-in" class="blocks-application">
             <div>
-                <image src="assets/images/icons_application/bag.png"></image>
+                <image src="assets/images/icons_application/necktie.png"></image>
                 <h4>Au travail</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
-            </div>
-            <div>
-                <image src="assets/images/icons_application/bus.png"></image>
-                <h4>A l'aéorport</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
+                <p>80% des salariés ressentent de la fatigue au cours de leur journée de travail et 64% sont stressés.</p>
+                <p>Prendre une pause de 20 minutes au cours de la journée permet de limiter le stress, diminuer la fatigue, augmenter la créativité et la productivité.</p>
             </div>
             <div>
                 <image src="assets/images/icons_application/honeymoon.png"></image>
+                <h4>A l'aéorport</h4>
+                <p>78% des voyageurs sont stressés à l'idée de rater leur vol et nombreux sont ceux qui aimerait pouvoir attendre plus confortablement dans l'aéroport.</p>
+                <p>Notre capsule peut aider les voyageurs à récuperer d'un jetlag ou à se relaxer avant leur correpondance.</p>
+            </div>
+            <div>
+                <image src="assets/images/icons_application/bus.png"></image>
                 <h4>sur les aires d'autoroutes</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
+                <p>La somnolence au volant est responsable de 32% des accidents mortels sur nos routes chaque année.</p>
+                <p>En permettant aux conducteurs de se reposer sur les aires d'autoroute dans notre capsule, on rend les routes plus sûres.</p>
             </div>
             <div>
                 <image src="assets/images/icons_application/necktie.png"></image>
-                <h4>au travail</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle</p>
+                <h4>Dans les centres commerciaux</h4>
+                <p>Les centres commerciaux sont souvent des endroits bruyant où le consommateur est sans cesse solicité. Pour 37% des gens, ceci est une source de stress et de fatigue!</p>
+                <p>Installez une capsule Adilson et permettez à vos clients de se ressourcer entre deux achats!</p>
             </div>
         </div>
     </div>
 
     <div id="parteners">
         <h2>CLIENTS ET PARTENAIRES</h2>
-        <div>
+        <div data-aos="zoom-in">
             <div>
                 <img src="assets/images/partners/happytech.png">
             </div>
@@ -95,9 +96,42 @@
             </div>
         </div>
     </div>
+
+    <div id="contact">
+        <h2>CONTACTEZ NOUS</h2>
+        <div data-aos="zoom-in" class="block-contact">
+            <div class="form-text">
+                <p>Vous êtes à la recherche d’une solution pour améliorer le bien être de vos salariés ou de vos clients?
+                    Ou simplement curieux à propos de notre capsule?</p>
+                <p>Contactez-nous !</p>
+                <ul>
+                    <li>Tour Montparnasse</li>
+                    <li>33, Avenue du Maine</li>
+                    <li>75 015 Paris</li>
+                    <li>France</li>
+                    <li>+33 6 48 48 75 88</li>
+                    <li>contact@adilson.fr</li>
+                </ul>
+            </div>
+            <div class="div-form">
+                <form>
+                    <input type="text" placeholder="Nom">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Numéro de téléphone">
+                    <input class="input-message" type="text" placeholder="Message">
+                    <button id="btn" style="display: none"></button>
+                </form>
+            </div>
+            <label class="button" for="btn">ENVOYER</label>
+        </div>
+    </div>
 </section>
 
 </body>
 <script src="assets/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
