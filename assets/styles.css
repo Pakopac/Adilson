@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 h2{
     font-size: 2em;
     margin: 80px 0 40px 0;
@@ -243,4 +246,14 @@ form button{
 }
 .button:hover{
     cursor: pointer;
+}
+footer{
+    background: #323335;
+}
+.div-footer{
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px 0;
 }
