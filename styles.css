@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 10px 8%;
+}
+nav a {
+    color: grey;
+}
+ul a:hover{
+    border-bottom:2px solid ;
+}
+.logo{
+    font-size: 2em;
+}
+nav ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
