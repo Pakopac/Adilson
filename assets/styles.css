@@ -313,8 +313,8 @@ footer{
 
 .enable-switch-block{
     background: rgba(0, 0, 0, 0.8);
-    justify-content: start;
     display: block;
+    justify-content: end;
 }
 .enable-switch-block:hover{
     cursor: auto;
@@ -328,7 +328,6 @@ footer{
     border: 0 !important;
     text-align: center;
     margin-top: 0;
-    justify-content: center;
 }
 .separate-nav-mobile{
     display: none;
@@ -496,7 +495,6 @@ footer{
         display: none;
     }
     .choice-industry{
-        justify-content: end;
         display: flex;
     }
 }

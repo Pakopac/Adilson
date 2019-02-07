@@ -103,6 +103,9 @@ function changeSwitchState() {
         choiceIndustry.classList.add('enable-switch-block');
         switchIndustry.classList.add('enable-switch-text');
         titleIndusty.classList.add('enable-switch-title');
+        if(window.innerWidth < 1024) {
+            choiceIndustry.style.justifyContent = 'end';
+        }
 
         choiceIndividual.classList.remove('enable-switch-block');
         switchIndividual.classList.remove('enable-switch-text');
@@ -112,6 +115,7 @@ function changeSwitchState() {
         choiceIndustry.classList.remove('enable-switch-block');
         switchIndustry.classList.remove('enable-switch-text');
         titleIndusty.classList.remove('enable-switch-title');
+        choiceIndustry.style.justifyContent = 'center';
 
         choiceIndividual.classList.add('enable-switch-block');
         switchIndividual.classList.add('enable-switch-text');
