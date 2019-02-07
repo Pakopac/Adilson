@@ -470,6 +470,7 @@ footer{
         text-align: center;
         color: #FFFFFF;
         background: #6599A0;
+        margin-bottom: -20px;
     }
     .block-contact-mobile{
         display: block;
@@ -478,6 +479,9 @@ footer{
         margin: 10px 0;
     }
     .block-contact-desktop{
+        display: none;
+    }
+    .div-footer{
         display: none;
     }
 }
