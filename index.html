@@ -12,14 +12,23 @@
     <title>Adilson</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 <nav>
-    <a href="#" class="logo"><img src="assets/images/logo.png"></a>
-    <ul>
+    <a href="#item-navbar"><i class="fas fa-bars"></i></a>
+    <img class="logo" src="assets/images/logo.png">
+    <ul id="item-navbar">
         <li><a href="#solution">Notre solution</a></li>
         <li><a href="#application">Application</a></li>
         <li><a href="#contact">Contact</a></li>
+        <div class="separate-nav-mobile"></div>
+        <div class="social-media-nav">
+            <img src="assets/images/social_medias/fbblanc.png">
+            <img src="assets/images/social_medias/instablanc.png">
+            <img src="assets/images/social_medias/twitterblanc.png">
+            <img src="assets/images/social_medias/ytblanc.png">
+        </div>
     </ul>
 </nav>
 <div data-aos="zoom-in" class="block-choice">
@@ -49,6 +58,7 @@
     <div id="application">
         <h2>APPLICATIONS</h2>
         <p class="subTitleAppli">où installer notre capsule?</p>
+        <img class="angle1" src="assets/images/angle1.png">
         <div data-aos="zoom-in" class="blocks-application">
             <div>
                 <image src="assets/images/icons_application/necktie.png"></image>
@@ -75,6 +85,7 @@
                 <p>Installez une capsule Adilson et permettez à vos clients de se ressourcer entre deux achats!</p>
             </div>
         </div>
+        <img class="angle2" src="assets/images/angle2.png">
     </div>
 
     <div id="parteners">
@@ -111,6 +122,7 @@
                     <li>contact@adilson.fr</li>
                 </ul>
             </div>
+            <img src="assets/images/form-form.png">
             <div class="div-form">
                 <form>
                     <input type="text" placeholder="Nom">

@@ -36,34 +36,21 @@ window.onload = function () {
 
 function changeSwitchState() {
     if(labelSwitch.checked === true){
-        choiceIndustry.style.background = 'rgba(0, 0, 0, 0.8)';
-        choiceIndustry.style.justifyContent = 'start';
-        switchIndustry.style.display = 'block';
-        titleIndusty.style.color = '#FFFFFF';
-        titleIndusty.style.background = 'transparent';
-        titleIndusty.style.border = 0;
+        choiceIndustry.classList.add('enable-switch-block');
+        switchIndustry.classList.add('enable-switch-text');
+        titleIndusty.classList.add('enable-switch-title');
 
-        choiceIndividual.style.background = 'rgba(0, 0, 0, 0.4)';
-        choiceIndividual.style.justifyContent = 'center';
-        switchIndividual.style.display = 'none';
-        titleIndividual.style.color = '#323335';
-        titleIndividual.style.background = '#FFFFFF';
-        titleIndividual.style.border = '1px solid #6599A0';
+        choiceIndividual.classList.remove('enable-switch-block');
+        switchIndividual.classList.remove('enable-switch-text');
+        titleIndividual.classList.remove('enable-switch-title');
     }
     else {
-        choiceIndividual.style.background = 'rgba(0, 0, 0, 0.8)';
-        choiceIndividual.style.justifyContent = 'start';
-        switchIndividual.style.display = 'block';
-        titleIndividual.style.color = '#FFFFFF';
-        titleIndividual.style.background = 'transparent';
-        titleIndividual.style.border = 0;
+        choiceIndustry.classList.remove('enable-switch-block');
+        switchIndustry.classList.remove('enable-switch-text');
+        titleIndusty.classList.remove('enable-switch-title');
 
-        choiceIndustry.style.background = 'rgba(0, 0, 0, 0.4)';
-        choiceIndustry.style.justifyContent = 'center';
-        switchIndustry.style.display = 'none';
-        switchIndustry.style.display = 'none';
-        titleIndusty.style.color = '#323335';
-        titleIndusty.style.background = '#FFFFFF';
-        titleIndusty.style.border = '1px solid #6599A0';
+        choiceIndividual.classList.add('enable-switch-block');
+        switchIndividual.classList.add('enable-switch-text');
+        titleIndividual.classList.add('enable-switch-title');
     }
 }
