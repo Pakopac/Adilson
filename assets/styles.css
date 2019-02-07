@@ -328,6 +328,7 @@ footer{
     border: 0 !important;
     text-align: center;
     margin-top: 0;
+    justify-content: center;
 }
 .separate-nav-mobile{
     display: none;
@@ -341,11 +342,18 @@ footer{
 .slider-capsule,.blocks-application-mobile, .parteners-mobile{
     display: none !important;
 }
+@media screen and (min-width: 1024px){
+    .enable-switch-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 1024px){
     nav{
         z-index: 1;
         top: 0;
-        justify-content: start;
+        justify-content: center;
         position: sticky;
         background-image: linear-gradient(to bottom, #323335, transparent);
     }
@@ -358,6 +366,8 @@ footer{
     nav .fa-bars{
         margin-left: 15px;
         display: block;
+        position: absolute;
+        left: 0;
     }
     .social-media-nav{
         display: flex;
@@ -429,6 +439,7 @@ footer{
         margin-top: 200px;
         align-items: center;
         line-height: 2;
+        left: 0;
     }
     #item-navbar a {
         color: #FFFFFF;
@@ -483,5 +494,9 @@ footer{
     }
     .div-footer{
         display: none;
+    }
+    .choice-industry{
+        justify-content: end;
+        display: flex;
     }
 }

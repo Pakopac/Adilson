@@ -50,16 +50,19 @@ window.onload = function () {
 
     document.querySelector('.fa-bars').onclick = () => {
         if(document.querySelector('#item-navbar').style.display === 'none') {
-            document.querySelector('#item-navbar').style.display = 'flex'
+            document.querySelector('#item-navbar').style.display = 'flex';
+            document.querySelector('nav').style.justifyContent = 'end';
         }
         else{
-            document.querySelector('#item-navbar').style.display = 'none'
+            document.querySelector('#item-navbar').style.display = 'none';
+            document.querySelector('nav').style.justifyContent = 'center';
         }
     };
 
     document.querySelector('#main').onclick = (e) => {
         if(e.target != document.getElementById('item-navbar')){
             document.querySelector('#item-navbar').style.display = 'none';
+            document.querySelector('nav').style.justifyContent = 'center';
         }
     };
 
