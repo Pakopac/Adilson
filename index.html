@@ -13,12 +13,19 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
 </head>
 <body>
 
 <nav>
-    <a href="#item-navbar"><i class="fas fa-bars"></i></a>
-    <img class="logo" src="assets/images/logo.png">
+    <i class="fas fa-bars"></i>
+    <img class="logo_desktop" src="assets/images/logo.png">
+    <img class="logo_mobile" src="assets/images/logo_white.png">
+    <ul class="item-navbar-desktop">
+        <li><a href="#solution">Notre solution</a></li>
+        <li><a href="#application">Application</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
     <ul id="item-navbar">
         <li><a href="#solution">Notre solution</a></li>
         <li><a href="#application">Application</a></li>
@@ -54,7 +61,26 @@
 <section id="main">
     <div id="solution">
         <h2>NOTRE SOLUTION</h2>
-        <img data-aos="zoom-in" class="capsule" src="assets/images/capsule.png">
+        <img data-aos="zoom-in" class="capsule_desktop" src="assets/images/capsule.png">
+        <img class="capsule_mobile" src="assets/images/MACHINE.png">
+        <div class="slider-capsule">
+            <div>
+                <h3>CONNECTEE</h3>
+                <p>via une application mobile pour réserver et personnaliser à tout moment votre séance de relaxation !</p>
+            </div>
+            <div>
+                <h3>ISOLEE</h3>
+                <p>phonotiquement et visuellement pour un meilleur repos.</p>
+            </div>
+            <div>
+                <h3>ECORESPONSABLE</h3>
+                <p>produite localement avec des matériaux écologiques.</p>
+            </div>
+            <div>
+                <h3>POLYSENSORIELLE</h3>
+                <p>avec son spatialisé, lumière et arômes pour une expérience unique.</p>
+            </div>
+        </div>
     </div>
     <div id="application">
         <h2>APPLICATIONS</h2>
@@ -80,7 +106,33 @@
                 <p>En permettant aux conducteurs de se reposer sur les aires d'autoroute dans notre capsule, on rend les routes plus sûres.</p>
             </div>
             <div>
+                <image src="assets/images/icons_application/bag.png"></image>
+                <h4>Dans les centres commerciaux</h4>
+                <p>Les centres commerciaux sont souvent des endroits bruyant où le consommateur est sans cesse solicité. Pour 37% des gens, ceci est une source de stress et de fatigue!</p>
+                <p>Installez une capsule Adilson et permettez à vos clients de se ressourcer entre deux achats!</p>
+            </div>
+        </div>
+        <div data-aos="zoom-in" class="blocks-application-mobile">
+            <div>
                 <image src="assets/images/icons_application/necktie.png"></image>
+                <h4>Au travail</h4>
+                <p>80% des salariés ressentent de la fatigue au cours de leur journée de travail et 64% sont stressés.</p>
+                <p>Prendre une pause de 20 minutes au cours de la journée permet de limiter le stress, diminuer la fatigue, augmenter la créativité et la productivité.</p>
+            </div>
+            <div>
+                <image src="assets/images/icons_application/honeymoon.png"></image>
+                <h4>A l'aéorport</h4>
+                <p>78% des voyageurs sont stressés à l'idée de rater leur vol et nombreux sont ceux qui aimerait pouvoir attendre plus confortablement dans l'aéroport.</p>
+                <p>Notre capsule peut aider les voyageurs à récuperer d'un jetlag ou à se relaxer avant leur correpondance.</p>
+            </div>
+            <div>
+                <image src="assets/images/icons_application/bus.png"></image>
+                <h4>sur les aires d'autoroutes</h4>
+                <p>La somnolence au volant est responsable de 32% des accidents mortels sur nos routes chaque année.</p>
+                <p>En permettant aux conducteurs de se reposer sur les aires d'autoroute dans notre capsule, on rend les routes plus sûres.</p>
+            </div>
+            <div>
+                <image src="assets/images/icons_application/bag.png"></image>
                 <h4>Dans les centres commerciaux</h4>
                 <p>Les centres commerciaux sont souvent des endroits bruyant où le consommateur est sans cesse solicité. Pour 37% des gens, ceci est une source de stress et de fatigue!</p>
                 <p>Installez une capsule Adilson et permettez à vos clients de se ressourcer entre deux achats!</p>
@@ -91,7 +143,21 @@
 
     <div id="parteners">
         <h2>CLIENTS ET PARTENAIRES</h2>
-        <div data-aos="zoom-in">
+        <div class="parteners-desktop" data-aos="zoom-in">
+            <div>
+                <img src="assets/images/partners/happytech.png">
+            </div>
+            <div>
+                <img src="assets/images/partners/ionis.jpg">
+            </div>
+            <div>
+                <img src="assets/images/partners/startway.png">
+            </div>
+            <div>
+                <img src="assets/images/partners/sncf.png">
+            </div>
+        </div>
+        <div class="parteners-mobile">
             <div>
                 <img src="assets/images/partners/happytech.png">
             </div>
@@ -155,6 +221,7 @@
 <script src="assets/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/slick/slick.min.js"></script>
 <script>
     AOS.init();
 </script>

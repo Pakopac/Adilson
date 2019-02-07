@@ -32,15 +32,19 @@ nav a {
 }
 nav .fa-bars {
     display: none;
+    color: white;
+}
+.fa-bars:hover{
+    cursor: pointer;
 }
 ul a:hover{
     border-bottom:2px solid;
 }
-.logo{
+.logo_desktop{
     margin: 10px;
     align-self: start;
 }
-.logo{
+.logo_desktop, .logo_mobile{
     width: 120px;
 }
 nav ul{
@@ -172,7 +176,7 @@ input:checked + .slider:before {
     padding: 0px 100px;
     font-size: 0.7em;
 }
-.capsule{
+.capsule_desktop, .capsule_mobile{
     width: 90%;
     margin: 0 5%;
 }
@@ -220,14 +224,14 @@ width: 80px;
     margin-right: 3%;
     margin-top: -10%;
 }
-#parteners > div{
+.parteners-desktop{
     justify-content: center;
     margin: 5% 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
 }
-#parteners > div > div{
+.parteners-desktop > div{
     display: flex;
     justify-content: center;
 }
@@ -331,9 +335,11 @@ footer{
     height: 2px;
     background: #FFFFFF;
 }
-.social-media-nav{
+.social-media-nav, .logo_mobile, .capsule_mobile{
     display: none;
-
+}
+.slider-capsule,.blocks-application-mobile, .parteners-mobile{
+    display: none !important;
 }
 @media screen and (max-width: 1024px){
     nav{
@@ -343,35 +349,15 @@ footer{
         position: sticky;
         background-image: linear-gradient(to bottom, #323335, transparent);
     }
-    nav .logo{
-        justify-self: center;
+    .logo_mobile{
+        display: block;
     }
-    nav ul{
+    .logo_desktop{
         display: none;
     }
     nav .fa-bars{
         margin-left: 15px;
         display: block;
-    }
-    #item-navbar:target{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background: #323335;
-        margin-left: -30px;
-        width: 50%;
-        height: 200vh;
-        justify-content: center;
-        margin-top: 200px;
-        align-items: center;
-        line-height: 2;
-    }
-    #item-navbar:target a{
-        color: #FFFFFF;
-    }
-    #item-navbar:target .separate-nav-mobile{
-        display: block;
-        margin: 20px 0;
     }
     .social-media-nav{
         display: flex;
@@ -391,5 +377,90 @@ footer{
     .switch-individual, .switch-industry{
         line-height: 22px;
         padding: 0;
+    }
+    .capsule_desktop{
+        display: none;
+    }
+    .capsule_mobile{
+        display: block;
+    }
+    .slider-capsule{
+        display: flex !important;
+        align-items: center;
+    }
+    .slick-list{
+        text-align: center;
+    }
+    .slider-capsule p{
+        width: 70%;
+        margin: 0 15%;
+    }
+    .blocks-application{
+        display: none;
+    }
+    .blocks-application-mobile img{
+        width: 80px;
+    }
+    .blocks-application-mobile{
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        padding: 20px;
+    }
+    .blocks-application-mobile div{
+        justify-content: center;
+    }
+    .parteners-mobile{
+        display: flex !important;
+        align-items: center;
+    }
+    .parteners-desktop{
+        display: none !important;
+    }
+    #item-navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: #323335;
+        margin-left: -30px;
+        width: 50%;
+        height: 200vh;
+        justify-content: center;
+        margin-top: 200px;
+        align-items: center;
+        line-height: 2;
+    }
+    #item-navbar a {
+        color: #FFFFFF;
+    }
+    #item-navbar .separate-nav-mobile{
+        display: block;
+        margin: 20px 0;
+    }
+    #item-navbar ul{
+        justify-content: center;
+    }
+    #item-navbar li{
+        text-align: center;
+    }
+    #item-navbar li:first-child{
+        margin-top: 60px;
+    }
+    .social-media-nav{
+        display: flex;
+        width: 100%;
+    }
+    .item-navbar-desktop{
+        display: none;
+    }
+    .slick-prev{
+        height: 25px !important;
+        width: 25px !important;
+        margin-left: 10px;
+    }
+    .slick-next{
+        height: 25px !important;
+        width: 25px !important;
+        margin-right: 10px;
     }
 }

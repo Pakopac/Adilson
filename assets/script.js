@@ -2,12 +2,14 @@ var choiceIndustry = document.querySelector('.choice-industry');
 var choiceIndividual = document.querySelector('.choice-individual');
 var switchIndustry = document.querySelector('.switch-industry');
 var switchIndividual = document.querySelector('.switch-individual');
-var titleIndividual = document.querySelector('.titleIndividual')
-var titleIndusty = document.querySelector('.titleIndustry')
+var titleIndividual = document.querySelector('.titleIndividual');
+var titleIndusty = document.querySelector('.titleIndustry');
 
 var labelSwitch = document.querySelector('.checkSwitch');
 
 window.onload = function () {
+    document.querySelector('#item-navbar').style.display = 'none';
+
     labelSwitch.checked = false;
 
   choiceIndustry.onclick = () => {
@@ -46,11 +48,50 @@ window.onload = function () {
         }, 1000);
     });
 
-    document.querySelector('body').onclick = (e) => {
-        if(e.target != document.getElementById('item-navbar')){
-            location.href = "#"
+    document.querySelector('.fa-bars').onclick = () => {
+        if(document.querySelector('#item-navbar').style.display === 'none') {
+            document.querySelector('#item-navbar').style.display = 'flex'
         }
-    }
+        else{
+            document.querySelector('#item-navbar').style.display = 'none'
+        }
+    };
+
+    document.querySelector('#main').onclick = (e) => {
+        if(e.target != document.getElementById('item-navbar')){
+            document.querySelector('#item-navbar').style.display = 'none';
+        }
+    };
+
+    $('.slider-capsule').slick({
+        infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:"<img width='10px' class='a-left control-c prev slick-prev' src='assets/images/arrow-prev.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='assets/images/arrow-next.png'>",
+    });
+
+    $('.blocks-application-mobile').slick({
+        infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:"<img width='10px' class='a-left control-c prev slick-prev' src='assets/images/arrow-prev.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='assets/images/arrow-next.png'>",
+    });
+
+    $('.parteners-mobile').slick({
+        infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow:"<img width='10px' class='a-left control-c prev slick-prev' src='assets/images/arrow-prev.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='assets/images/arrow-next.png'>",
+    });
 
 };
 
