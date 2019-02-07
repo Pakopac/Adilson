@@ -24,13 +24,33 @@ window.onload = function () {
       changeSwitchState()
   };
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
+    $(document).on('click', 'a[href^="#solution"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
     });
+    $(document).on('click', 'a[href^="#application"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
+    $(document).on('click', 'a[href^="#contact"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
+
+    document.querySelector('body').onclick = (e) => {
+        if(e.target != document.getElementById('item-navbar')){
+            location.href = "#"
+        }
+    }
 
 };
 

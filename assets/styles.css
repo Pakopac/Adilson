@@ -371,8 +371,13 @@ footer{
     }
     .block-choice{
         flex-direction: column;
+        height: 750px;
     }
     .slider{
         transform: rotate(90deg);
+    }
+    .switch-individual, .switch-industry{
+        line-height: 22px;
+        padding: 0;
     }
 }
