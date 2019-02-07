@@ -226,7 +226,7 @@ width: 80px;
 }
 .parteners-desktop{
     justify-content: center;
-    margin: 5% 0;
+    margin: 5% 3%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
