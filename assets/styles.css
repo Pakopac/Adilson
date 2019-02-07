@@ -341,6 +341,10 @@ footer{
 .slider-capsule,.blocks-application-mobile, .parteners-mobile{
     display: none !important;
 }
+.parteners-mobile{
+    justify-content: center;
+    display: flex;
+}
 @media screen and (min-width: 1024px){
     .enable-switch-block{
         display: flex;
@@ -407,6 +411,16 @@ footer{
     .blocks-application{
         display: none;
     }
+    .slick-list .parteners-img1{
+        margin-left: 10%;
+    }
+    .slick-list .parteners-img2{
+        margin-left: 35%;
+    }
+    .slick-list .application-img{
+        margin-left: 40%;
+    }
+
     .blocks-application-mobile img{
         width: 80px;
     }
