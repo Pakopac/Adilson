@@ -1,5 +1,17 @@
+@font-face {
+    font-family: Robotto;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Regular.ttf");
+}
 body{
     margin: 0;
+    font-family: Robotto;
+}
+h2,h3,h4,nav,.button,footer{
+    font-family: Montserrat;
 }
 h2{
     font-size: 2em;
